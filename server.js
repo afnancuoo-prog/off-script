@@ -87,7 +87,9 @@ function gameSessionUrl(request, sessionId, player) {
     const address = host && host !== "localhost" && host !== "127.0.0.1"
         ? host
         : getLanAddress();
-    return `http://${address}:${port}/phone-upload.html?session=${encodeURIComponent(sessionId)}&player=${encodeURIComponent(player)}`;
+    const protocol = request.headers["x-forwarded-proto"] || "http";
+    const portSuffix = host && host !== "localhost" && host !== "127.0.0.1" ? "" : `:${port}`;
+    return `${protocol}://${address}${portSuffix}/phone-upload.html?session=${encodeURIComponent(sessionId)}&player=${encodeURIComponent(player)}`;
 }
 
 function imagePart(dataUrl) {
@@ -178,7 +180,7 @@ Use scores from 0 to 100. Judge only what is visibly present. If the images are 
     };
 }
 
-const server = http.createServer(async (request, response) => {
+async function handleRequest(request, response) {
     if (request.method === "GET" && request.url?.startsWith("/api/game/qr?")) {
         try {
             const data = new URL(request.url, `http://${request.headers.host}`).searchParams.get("data");
@@ -260,8 +262,12 @@ const server = http.createServer(async (request, response) => {
         "Cache-Control": "no-store, no-cache, must-revalidate"
     });
     fs.createReadStream(filePath).pipe(response);
-});
+}
 
-server.listen(port, () => {
-    console.log(`ithaano athaano is running at http://localhost:${port}`);
-});
+if (require.main === module) {
+    http.createServer(handleRequest).listen(port, () => {
+        console.log(`ithaano athaano is running at http://localhost:${port}`);
+    });
+}
+
+module.exports = handleRequest;

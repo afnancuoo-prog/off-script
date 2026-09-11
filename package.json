@@ -2,7 +2,7 @@
   "name": "ithaano-athaano",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node local-server.js"
   },
   "dependencies": {
     "qrcode": "^1.5.4"

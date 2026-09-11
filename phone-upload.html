@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Find | ithaano athaano</title>
+    <link rel="stylesheet" href="phone-upload.css">
+</head>
+<body>
+    <main class="phone-page">
+        <div class="phone-mark">⚖️ ithaano <span>athaano</span></div>
+        <section class="phone-card">
+            <div class="phone-icon">📸</div>
+            <p class="eyebrow">QUICK FIND CHALLENGE</p>
+            <h1>Upload your find</h1>
+            <p class="phone-copy">Take or choose a photo for <strong id="playerLabel">your player</strong>. It will appear on the challenge screen.</p>
+            <label class="phone-picker" for="phoneImageInput">
+                <strong>Choose or take a photo</strong>
+                <span>JPEG, PNG, or WEBP</span>
+                <input id="phoneImageInput" type="file" accept="image/jpeg,image/png,image/webp" capture="environment">
+            </label>
+            <img class="phone-preview" id="phonePreview" alt="Selected product preview" hidden>
+            <p class="phone-status" id="phoneStatus" aria-live="polite">Waiting for your photo.</p>
+            <button class="phone-upload-button" id="phoneUploadButton" type="button" disabled>Send Photo to Game</button>
+        </section>
+    </main>
+    <script src="phone-upload.js"></script>
+</body>
+</html>

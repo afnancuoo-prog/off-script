@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Banana Comparison | ithaano athaano
+    </title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="banana.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <span class="logo-icon">
+                    ⚖️
+                </span>
+
+                <span>
+                    ithaano
+                    <span class="logo-orange">
+                        athaano
+                    </span>
+                </span>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+
+            <div
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+                <a href="#comparison">
+                    Compare
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <a
+                href="index.html"
+                class="header-btn"
+            >
+                ← Back to Home
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ================= BREADCRUMB ================= -->
+
+        <div class="breadcrumb-container">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span>/</span>
+
+                <span>
+                    Examples
+                </span>
+
+                <span>/</span>
+
+                <strong>
+                    Banana
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+
+            <div class="banana-bubble bubble-left">
+                🍌
+            </div>
+
+
+            <div class="banana-bubble bubble-right">
+                🍌
+            </div>
+
+
+            <div class="hero-content">
+
+
+                <div class="hero-badge">
+                    🍌 BANANA COMPARISON
+                </div>
+
+
+                <h1>
+
+                    Which banana is
+
+                    <span>
+                        more curved?
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Upload two bananas and let
+                    ithaano athaano decide which
+                    one has the bigger curve.
+
+                </p>
+
+
+                <div class="hero-note">
+
+                    You bring the bananas.
+                    We compare the curves. 🏆
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COMPARISON ================= -->
+
+        <section
+            class="comparison-section"
+            id="comparison"
+        >
+
+
+            <div class="section-heading">
+
+
+                <span class="section-label">
+                    🆚 TWO BANANAS
+                </span>
+
+
+                <h2>
+
+                    Ready to settle the
+
+                    <span>
+                        banana debate?
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Upload one banana for each person
+                    and let's see which one has the
+                    bigger curve.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ================= UPLOAD AREA ================= -->
+
+            <div class="comparison-area">
+
+
+                <!-- PERSON A -->
+
+                <div
+                    class="person-card"
+                    id="personCardA"
+                >
+
+
+                    <div class="person-header">
+
+
+                        <div>
+
+                            <span class="person-label">
+                                PERSON A
+                            </span>
+
+
+                            <h3>
+                                Your Banana
+                            </h3>
+
+                        </div>
+
+
+                        <div class="person-badge">
+                            A
+                        </div>
+
+                    </div>
+
+
+
+                    <input
+                        type="file"
+                        id="imageInputA"
+                        class="hidden-input"
+                        accept="image/*"
+                    >
+
+
+
+                    <div
+                        class="upload-box"
+                        id="uploadBoxA"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Upload banana image for Person A"
+                    >
+
+
+                        <div
+                            class="upload-placeholder"
+                            id="placeholderA"
+                        >
+
+                            <div class="camera-icon">
+                                📷
+                            </div>
+
+
+                            <h4>
+                                Upload Banana Image
+                            </h4>
+
+
+                            <p>
+                                Click here to choose an image
+                            </p>
+
+
+                            <span class="file-types">
+                                JPG, PNG or WEBP
+                            </span>
+
+                        </div>
+
+
+
+                        <div
+                            class="preview-container"
+                            id="previewContainerA"
+                            hidden
+                        >
+
+                            <img
+                                id="previewA"
+                                src=""
+                                alt="Person A banana preview"
+                            >
+
+
+                            <div class="preview-overlay">
+
+                                <span>
+                                    Image uploaded ✓
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        class="change-image-btn"
+                        id="changeImageA"
+                        type="button"
+                        hidden
+                    >
+                        🔄 Change Image
+                    </button>
+
+
+                    <div
+                        class="upload-status"
+                        id="statusA"
+                    >
+                        Waiting for banana...
+                    </div>
+
+                </div>
+
+
+
+                <!-- VS -->
+
+                <div class="vs-area">
+
+                    <div class="vs-line"></div>
+
+
+                    <div class="vs-circle">
+                        VS
+                    </div>
+
+
+                    <div class="vs-line"></div>
+
+                </div>
+
+
+
+                <!-- PERSON B -->
+
+                <div
+                    class="person-card"
+                    id="personCardB"
+                >
+
+
+                    <div class="person-header">
+
+
+                        <div>
+
+                            <span class="person-label">
+                                PERSON B
+                            </span>
+
+
+                            <h3>
+                                Friend's Banana
+                            </h3>
+
+                        </div>
+
+
+                        <div class="person-badge">
+                            B
+                        </div>
+
+                    </div>
+
+
+
+                    <input
+                        type="file"
+                        id="imageInputB"
+                        class="hidden-input"
+                        accept="image/*"
+                    >
+
+
+
+                    <div
+                        class="upload-box"
+                        id="uploadBoxB"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Upload banana image for Person B"
+                    >
+
+
+                        <div
+                            class="upload-placeholder"
+                            id="placeholderB"
+                        >
+
+                            <div class="camera-icon">
+                                📷
+                            </div>
+
+
+                            <h4>
+                                Upload Banana Image
+                            </h4>
+
+
+                            <p>
+                                Click here to choose an image
+                            </p>
+
+
+                            <span class="file-types">
+                                JPG, PNG or WEBP
+                            </span>
+
+                        </div>
+
+
+
+                        <div
+                            class="preview-container"
+                            id="previewContainerB"
+                            hidden
+                        >
+
+                            <img
+                                id="previewB"
+                                src=""
+                                alt="Person B banana preview"
+                            >
+
+
+                            <div class="preview-overlay">
+
+                                <span>
+                                    Image uploaded ✓
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        class="change-image-btn"
+                        id="changeImageB"
+                        type="button"
+                        hidden
+                    >
+                        🔄 Change Image
+                    </button>
+
+
+                    <div
+                        class="upload-status"
+                        id="statusB"
+                    >
+                        Waiting for banana...
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ERROR ================= -->
+
+            <div
+                class="error-message"
+                id="errorMessage"
+                role="alert"
+            >
+
+                <span>
+                    ⚠️
+                </span>
+
+                <span id="errorText">
+                    Please choose a valid banana image.
+                </span>
+
+            </div>
+
+
+
+            <!-- ================= COMPARE BUTTON ================= -->
+
+            <div class="compare-action">
+
+                <div class="comparison-options" role="group" aria-label="Choose what to compare">
+                    <span class="options-label">Compare by</span>
+                    <button type="button" class="option-btn" data-criterion="size">Size</button>
+                    <button type="button" class="option-btn" data-criterion="color">Color</button>
+                    <button type="button" class="option-btn active" data-criterion="curvature" aria-pressed="true">Curvature</button>
+                </div>
+
+
+                <button
+                    class="compare-btn"
+                    id="compareBtn"
+                    type="button"
+                    disabled
+                >
+
+                    <span class="compare-icon">
+                        🍌
+                    </span>
+
+
+                    <span>
+                        Compare Bananas
+                    </span>
+
+
+                    <span class="button-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <p
+                    class="compare-hint"
+                    id="compareHint"
+                >
+                    Upload both banana images to continue.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LOADING ================= -->
+
+        <section
+            class="loading-section"
+            id="loadingSection"
+            hidden
+        >
+
+
+            <div class="loading-card">
+
+
+                <div class="loading-banana">
+                    🍌
+                </div>
+
+
+                <div class="spinner"></div>
+
+
+                <h2>
+                    Analyzing the curves...
+                </h2>
+
+
+                <p>
+                    Comparing the two bananas 🔍
+                </p>
+
+
+                <div class="loading-bar">
+
+                    <div class="loading-progress"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RESULT ================= -->
+
+        <section
+            class="result-section"
+            id="resultSection"
+            hidden
+        >
+
+
+            <div class="result-card">
+
+
+                <div class="prototype-label">
+                    ✨ GEMINI AI RESULT
+                </div>
+
+
+                <div class="result-title">
+
+                    <span class="trophy">
+                        🏆
+                    </span>
+
+
+                    <h2>
+                        We Have a Winner!
+                    </h2>
+
+                </div>
+
+
+                <p class="result-subtitle">
+                    The banana debate has been settled.
+                </p>
+
+
+
+                <!-- RESULT IMAGES -->
+
+                <div class="result-comparison">
+
+
+                    <div
+                        class="result-person"
+                        id="resultPersonA"
+                    >
+
+
+                        <div class="result-label">
+                            PERSON A
+                        </div>
+
+
+                        <div class="result-image-box">
+
+                            <img
+                                id="resultImageA"
+                                src=""
+                                alt="Person A banana"
+                            >
+
+                        </div>
+
+
+                        <h3>
+                            Person A
+                        </h3>
+
+                    </div>
+
+
+
+                    <div class="result-vs">
+                        VS
+                    </div>
+
+
+
+                    <div
+                        class="result-person"
+                        id="resultPersonB"
+                    >
+
+
+                        <div class="result-label">
+                            PERSON B
+                        </div>
+
+
+                        <div class="result-image-box">
+
+                            <img
+                                id="resultImageB"
+                                src=""
+                                alt="Person B banana"
+                            >
+
+                        </div>
+
+
+                        <h3>
+                            Person B
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WINNER -->
+
+                <div class="winner-box">
+
+
+                    <div class="winner-trophy">
+                        🏆
+                    </div>
+
+
+                    <span class="winner-small">
+                        WINNER
+                    </span>
+
+
+                    <h3 id="winnerName">
+                        Person A Wins!
+                    </h3>
+
+
+                    <p id="winnerReason">
+
+                        Person A's banana appears
+                        more curved in this prototype
+                        comparison.
+
+                    </p>
+
+
+                    <div class="winner-result">
+                        More Curved
+                    </div>
+
+                </div>
+
+
+
+                <!-- CURVATURE -->
+
+                <div class="curvature-card">
+
+
+                    <div class="curvature-heading">
+
+
+                        <div>
+
+                            <span>
+                                📐 CURVATURE COMPARISON
+                            </span>
+
+
+                            <h3>
+                                Visible Curve
+                            </h3>
+
+                        </div>
+
+
+                        <span class="demo-tag">
+                            DEMO
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- SCORE A -->
+
+                    <div class="score-row">
+
+
+                        <div class="score-name">
+
+                            <strong>
+                                Person A
+                            </strong>
+
+
+                            <span id="scoreAText">
+                                90%
+                            </span>
+
+                        </div>
+
+
+                        <div class="score-track">
+
+                            <div
+                                class="score-fill score-a-fill"
+                                id="scoreA"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SCORE B -->
+
+                    <div class="score-row">
+
+
+                        <div class="score-name">
+
+                            <strong>
+                                Person B
+                            </strong>
+
+
+                            <span id="scoreBText">
+                                60%
+                            </span>
+
+                        </div>
+
+
+                        <div class="score-track">
+
+                            <div
+                                class="score-fill score-b-fill"
+                                id="scoreB"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <p class="demo-warning">
+
+                        Demo comparison — these values are
+                        not actual measurements from the
+                        uploaded photos. Real AI image
+                        analysis will be connected in a
+                        later phase.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- CRITERIA -->
+
+                <div class="criteria-card">
+
+
+                    <div class="criteria-title">
+
+
+                        <span>
+                            🎯
+                        </span>
+
+
+                        <div>
+
+                            <h3>
+                                What we compare
+                            </h3>
+
+
+                            <p>
+                                The only judging criterion
+                                is banana curvature.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="criteria-list">
+
+
+                        <div class="criteria-item">
+
+                            <span>
+                                🍌
+                            </span>
+
+                            <p>
+                                Overall banana curve
+                            </p>
+
+                        </div>
+
+
+                        <div class="criteria-item">
+
+                            <span>
+                                📐
+                            </span>
+
+                            <p>
+                                Arc / curvature shape
+                            </p>
+
+                        </div>
+
+
+                        <div class="criteria-item">
+
+                            <span>
+                                ↪️
+                            </span>
+
+                            <p>
+                                Bend direction
+                            </p>
+
+                        </div>
+
+
+                        <div class="criteria-item">
+
+                            <span>
+                                📏
+                            </span>
+
+                            <p>
+                                Visible shape
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DISCLAIMER -->
+
+                <div class="result-disclaimer">
+
+                    <span>
+                        💡
+                    </span>
+
+
+                    <p>
+
+                        This is currently a frontend prototype.
+                        The real AI curvature analysis will be
+                        added in a future phase.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- ACTIONS -->
+
+                <div class="result-actions">
+
+
+                    <button
+                        class="again-btn"
+                        id="againBtn"
+                        type="button"
+                    >
+                        🔄 Compare Again
+                    </button>
+
+
+                    <a
+                        href="index.html"
+                        class="home-btn"
+                    >
+                        ← Back to Home
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONFETTI -->
+
+            <div class="confetti confetti-1">
+                ✦
+            </div>
+
+            <div class="confetti confetti-2">
+                ✦
+            </div>
+
+            <div class="confetti confetti-3">
+                ✦
+            </div>
+
+            <div class="confetti confetti-4">
+                ✦
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section
+            class="how-section"
+            id="how-it-works"
+        >
+
+
+            <div class="section-heading">
+
+
+                <span class="section-label">
+                    ⚡ SIMPLE PROCESS
+                </span>
+
+
+                <h2>
+
+                    How the banana
+
+                    <span>
+                        challenge works.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+
+                    <div class="step-icon">
+                        📸
+                    </div>
+
+
+                    <h3>
+                        Upload
+                    </h3>
+
+
+                    <p>
+
+                        Person A and Person B each
+                        upload a photo of their banana.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-arrow">
+                    →
+                </div>
+
+
+
+                <div class="step">
+
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+
+                    <div class="step-icon">
+                        📐
+                    </div>
+
+
+                    <h3>
+                        Compare
+                    </h3>
+
+
+                    <p>
+
+                        The comparison focuses only
+                        on the visible curvature of
+                        each banana.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-arrow">
+                    →
+                </div>
+
+
+
+                <div class="step">
+
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+
+                    <div class="step-icon">
+                        🏆
+                    </div>
+
+
+                    <h3>
+                        Winner
+                    </h3>
+
+
+                    <p>
+
+                        The more curved banana becomes
+                        the winner.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+
+            <div class="about-card">
+
+
+                <div class="about-icon">
+                    🍌
+                </div>
+
+
+                <div>
+
+
+                    <span class="section-label">
+                        ABOUT THIS COMPARISON
+                    </span>
+
+
+                    <h2>
+
+                        One banana.
+
+                        <span>
+                            One debate.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        ithaano athaano is designed to
+                        settle friendly arguments by
+                        comparing visible features of
+                        two objects.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <span class="logo-icon">
+                        ⚖️
+                    </span>
+
+
+                    <span>
+
+                        ithaano
+
+                        <span class="logo-orange">
+                            athaano
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Compare. Analyze. Find the winner.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="#how-it-works">
+                    How It Works
+                </a>
+
+
+                <a href="#comparison">
+                    Compare
+                </a>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 ithaano athaano.
+                Built for friendly arguments.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="gemini-client.js"></script>
+    <script src="banana.js"></script>
+
+</body>
+
+</html>

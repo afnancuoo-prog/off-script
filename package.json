@@ -1,0 +1,10 @@
+{
+  "name": "ithaano-athaano",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

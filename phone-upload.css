@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #ff5a1f;
+    --cream: #fff8ef;
+    --dark: #171717;
+    --gray: #6d6d6d;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at top right, #ffe2c5, var(--cream) 55%);
+    color: var(--dark);
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.phone-page {
+    width: min(520px, 90%);
+    margin: 0 auto;
+    padding: 38px 0;
+}
+
+.phone-mark {
+    margin-bottom: 28px;
+    font-weight: 900;
+}
+
+.phone-mark span {
+    color: var(--orange);
+}
+
+.phone-card {
+    padding: 30px;
+    border: 1px solid rgba(23, 23, 23, 0.09);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 0 20px 55px rgba(60, 35, 10, 0.12);
+    text-align: center;
+}
+
+.phone-icon {
+    font-size: 48px;
+}
+
+.eyebrow {
+    margin: 14px 0 8px;
+    color: var(--orange);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(32px, 10vw, 52px);
+    line-height: 1;
+}
+
+.phone-copy {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.phone-picker {
+    display: block;
+    padding: 28px 18px;
+    border: 2px dashed rgba(255, 90, 31, 0.4);
+    border-radius: 16px;
+    background: #fff8ef;
+    cursor: pointer;
+}
+
+.phone-picker strong,
+.phone-picker span {
+    display: block;
+}
+
+.phone-picker span {
+    margin-top: 6px;
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.phone-picker input {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.phone-preview {
+    width: 100%;
+    max-height: 260px;
+    margin-top: 18px;
+    border-radius: 14px;
+    object-fit: contain;
+}
+
+.phone-status {
+    min-height: 24px;
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.phone-upload-button {
+    width: 100%;
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 12px;
+    background: var(--orange);
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 800;
+}
+
+.phone-upload-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}

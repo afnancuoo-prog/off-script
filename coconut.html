@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coconut Comparison | ithaano athaano</title>
+
+    <link rel="stylesheet" href="coconut.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⚖️</span>
+            <span>ithaano athaano</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#examples">Examples</a>
+            <a href="index.html#about">About</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="index.html#examples">Examples</a>
+            <a href="index.html#about">About</a>
+
+            <a href="index.html" class="mobile-back">
+                ← Back to Home
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- Breadcrumb -->
+        <div class="container breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Examples</span>
+            <span>/</span>
+            <strong>Coconut</strong>
+        </div>
+
+
+        <!-- ================= HERO ================= -->
+        <section class="hero container">
+
+            <div class="hero-badge">
+                🥥 COCONUT COMPARISON
+            </div>
+
+            <h1>
+                Which coconut has
+                <span>more visible fibers?</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Upload two coconuts and let ithaano athaano
+                compare the visible fibers on their shells.
+            </p>
+
+            <div class="hero-note">
+                You bring the coconuts. We compare the fibers. 🏆
+            </div>
+
+            <p class="debate-text">
+                Ready to settle the coconut debate?
+            </p>
+
+        </section>
+
+
+        <!-- ================= UPLOAD SECTION ================= -->
+        <section class="comparison-section container">
+
+            <div class="section-title">
+                <span>🥥</span>
+                Upload Your Coconuts
+            </div>
+
+            <div class="upload-grid">
+
+                <!-- PERSON A -->
+                <div class="upload-card" id="cardA">
+
+                    <div class="person-label">
+                        PERSON A
+                    </div>
+
+                    <h2>Your Coconut</h2>
+
+                    <div class="upload-area" id="uploadAreaA">
+
+                        <div class="upload-placeholder" id="placeholderA">
+
+                            <div class="upload-icon">
+                                📷
+                            </div>
+
+                            <h3>Upload Coconut Image</h3>
+
+                            <p>JPG, PNG or WEBP</p>
+
+                            <button
+                                type="button"
+                                class="choose-btn"
+                                id="chooseBtnA">
+                                Choose Image
+                            </button>
+
+                        </div>
+
+                        <div class="preview-container" id="previewContainerA">
+
+                            <img
+                                id="previewA"
+                                src=""
+                                alt="Person A coconut preview">
+
+                            <button
+                                type="button"
+                                class="change-btn"
+                                id="changeBtnA">
+                                Change Image
+                            </button>
+
+                        </div>
+
+                        <input
+                            type="file"
+                            id="fileA"
+                            accept="image/jpeg,image/png,image/webp"
+                            hidden>
+
+                    </div>
+
+                    <p class="upload-status" id="statusA">
+                        No image selected
+                    </p>
+
+                </div>
+
+
+                <!-- VS -->
+                <div class="vs-container">
+
+                    <div class="vs-circle">
+                        VS
+                    </div>
+
+                </div>
+
+
+                <!-- PERSON B -->
+                <div class="upload-card" id="cardB">
+
+                    <div class="person-label">
+                        PERSON B
+                    </div>
+
+                    <h2>Friend's Coconut</h2>
+
+                    <div class="upload-area" id="uploadAreaB">
+
+                        <div class="upload-placeholder" id="placeholderB">
+
+                            <div class="upload-icon">
+                                📷
+                            </div>
+
+                            <h3>Upload Coconut Image</h3>
+
+                            <p>JPG, PNG or WEBP</p>
+
+                            <button
+                                type="button"
+                                class="choose-btn"
+                                id="chooseBtnB">
+                                Choose Image
+                            </button>
+
+                        </div>
+
+                        <div class="preview-container" id="previewContainerB">
+
+                            <img
+                                id="previewB"
+                                src=""
+                                alt="Person B coconut preview">
+
+                            <button
+                                type="button"
+                                class="change-btn"
+                                id="changeBtnB">
+                                Change Image
+                            </button>
+
+                        </div>
+
+                        <input
+                            type="file"
+                            id="fileB"
+                            accept="image/jpeg,image/png,image/webp"
+                            hidden>
+
+                    </div>
+
+                    <p class="upload-status" id="statusB">
+                        No image selected
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Error message -->
+            <div class="error-message" id="errorMessage">
+                Please choose a valid coconut image.
+            </div>
+
+
+            <!-- Compare Button -->
+            <div class="compare-area">
+
+                <div class="comparison-options" role="group" aria-label="Choose what to compare">
+                    <span class="options-label">Compare by</span>
+                    <button type="button" class="option-btn active" data-criterion="fibers" aria-pressed="true">Outer fibers</button>
+                    <button type="button" class="option-btn" data-criterion="size">Size</button>
+                    <button type="button" class="option-btn" data-criterion="color">Shell color</button>
+                </div>
+
+                <button
+                    class="compare-btn"
+                    id="compareBtn"
+                    disabled>
+
+                    <span class="compare-icon">🥥</span>
+
+                    <span id="compareButtonText">
+                        Compare Coconuts
+                    </span>
+
+                </button>
+
+                <div class="loading-area" id="loadingArea">
+
+                    <div class="spinner"></div>
+
+                    <span>
+                        Analyzing the coconut fibers... 🔍
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROTOTYPE INFO ================= -->
+        <section class="prototype-info container">
+
+            <div class="prototype-icon">
+                🧪
+            </div>
+
+            <div>
+                <h3>Prototype Comparison</h3>
+
+                <p>
+                    This version is a frontend demonstration.
+                    It does not actually measure coconut fibers
+                    from the uploaded images.
+                </p>
+
+                <p>
+                    Real AI image analysis will be connected
+                    in a future phase.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULT ================= -->
+        <section
+            class="result-section container"
+            id="resultSection">
+
+            <div class="result-card">
+
+                <div class="result-header">
+
+                    <div class="winner-badge">
+                        ✨ GEMINI AI RESULT
+                    </div>
+
+                    <h2>
+                        We Have a Winner!
+                    </h2>
+
+                    <p>
+                        More Visible Fibers
+                    </p>
+
+                </div>
+
+
+                <!-- Result Images -->
+                <div class="result-images">
+
+                    <!-- Result A -->
+                    <div class="result-person">
+
+                        <div class="result-label">
+                            PERSON A
+                        </div>
+
+                        <div class="result-image-box winner-image">
+                            <img
+                                id="resultImageA"
+                                src=""
+                                alt="Person A coconut">
+                        </div>
+
+                        <div class="result-score">
+
+                            <div class="score-title">
+                                Person A
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    class="progress-bar"
+                                    id="scoreBarA">
+                                </div>
+                            </div>
+
+                            <strong id="scoreA">
+                                90%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VS -->
+                    <div class="result-vs">
+                        <span>VS</span>
+                    </div>
+
+
+                    <!-- Result B -->
+                    <div class="result-person">
+
+                        <div class="result-label">
+                            PERSON B
+                        </div>
+
+                        <div class="result-image-box">
+                            <img
+                                id="resultImageB"
+                                src=""
+                                alt="Person B coconut">
+                        </div>
+
+                        <div class="result-score">
+
+                            <div class="score-title">
+                                Person B
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    class="progress-bar"
+                                    id="scoreBarB">
+                                </div>
+                            </div>
+
+                            <strong id="scoreB">
+                                60%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Winner -->
+                <div class="winner-area">
+
+                    <div class="trophy">
+                        🏆
+                    </div>
+
+                    <div class="winner-text">
+                        <span>More Visible Fibers</span>
+
+                        <h3 id="winnerName">
+                            Person A Wins!
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <!-- Explanation -->
+                <div class="result-explanation">
+
+                    <p id="resultExplanation">
+                        Person A's coconut has more visible fibers
+                        in this prototype comparison.
+                    </p>
+
+                </div>
+
+
+                <!-- Criteria -->
+                <div class="criteria-box">
+
+                    <h3>
+                        🔍 What We Compare
+                    </h3>
+
+                    <div class="criteria-list">
+
+                        <span>
+                            Number of visible fibers
+                        </span>
+
+                        <span>
+                            Density of visible fibers
+                        </span>
+
+                        <span>
+                            Length of visible fibers
+                        </span>
+
+                        <span>
+                            Thickness / appearance
+                        </span>
+
+                        <span>
+                            Overall visible fiber coverage
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Disclaimer -->
+                <div class="demo-warning">
+
+                    <strong>
+                        ⚠️ Demo values only
+                    </strong>
+
+                    <p>
+                        These scores are not calculated from
+                        the uploaded images. Real AI image analysis
+                        will be connected in the next phase.
+                    </p>
+
+                </div>
+
+
+                <!-- Compare Again -->
+                <button
+                    class="reset-btn"
+                    id="resetBtn">
+
+                    🔄 Compare Again
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+        <section class="how-section container">
+
+            <div class="small-badge">
+                HOW IT WORKS
+            </div>
+
+            <h2>
+                Settle the coconut debate in 3 steps.
+            </h2>
+
+            <div class="how-grid">
+
+                <div class="how-card">
+                    <span>01</span>
+                    <h3>Upload</h3>
+                    <p>
+                        Person A and Person B upload
+                        their coconut pictures.
+                    </p>
+                </div>
+
+                <div class="how-card">
+                    <span>02</span>
+                    <h3>Compare</h3>
+                    <p>
+                        The future AI system will examine
+                        visible coconut-shell fibers.
+                    </p>
+                </div>
+
+                <div class="how-card">
+                    <span>03</span>
+                    <h3>Find the Winner</h3>
+                    <p>
+                        See which coconut has more
+                        visible fibers.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM BACK ================= -->
+        <section class="bottom-back">
+
+            <a href="index.html">
+                ← Back to Home
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-logo">
+            ⚖️ ithaano athaano
+        </div>
+
+        <p>
+            You bring the argument. We find the winner.
+        </p>
+
+        <small>
+            © 2026 ithaano athaano
+        </small>
+
+    </footer>
+
+
+    <script src="gemini-client.js"></script>
+    <script src="coconut.js"></script>
+
+</body>
+</html>

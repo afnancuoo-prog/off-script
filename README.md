@@ -1,18 +1,105 @@
-# ithaano athaano
+<img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
-The Banana, Coconut, and Tea comparison pages use Gemini to analyze the two uploaded images and return a winner, scores, and a short explanation.
 
-## Run locally
 
-1. Install Node.js 18 or newer.
-2. Keep the Gemini key in `.env` as `GEMINI_API_KEY=...`.
-3. Start the app:
+# ithaano athaano? 🎯
 
-```powershell
+
+## Basic Details
+### Team Name: off script 
+
+
+### Team Members
+- Team Lead: afnan km - EMEA arts and science college kondotty
+- Member 2: fathima shahana v- EMEA arts and science college kondotty
+
+
+### Project Description
+**ithaano athaano** is an AI-powered visual comparison platform that compares two images based on a specific criterion. Users can upload two images and let AI analyze them to determine a winner with scores and an explanation.
+
+
+### The Problem (that doesn't exist)
+People often have difficulty deciding between two visual options and rely on subjective opinions or arguments.
+
+### The Solution (that nobody asked for)
+ithaano athaano uses AI to analyze two images based on a specific criterion and provides a winner with an explanation.
+
+
+## Technical Details
+### Technologies/Components Used
+For Software:
+- Languages used: HTML5, CSS3, JavaScript
+- Frameworks used: No major frontend framework; built with Vanilla JavaScript
+- Libraries/APIs used: Gemini AI API for AI-powered visual comparison, QR Code generation for the Quick Find Challenge
+- Tools used: Visual Studio Code, Git, GitHub, Vercel, Google AI Studio, Web Browser- 
+
+ ForHardware:
+- Main components: Laptop/Desktop computer, keyboard, mouse, display/monitor, internet connection
+- Specifications: Minimum 4 GB RAM, dual-core processor, 10 GB available storage, stable internet connection
+- Tools required: Laptop/Desktop, web browser, internet connection, optional smartphone/camera for capturing comparison images
+
+### Implementation
+For Software:
+
+ # Installation
+git clone <repository-url>
+cd off-script
+npm install
+
+# Run
 npm start
-```
 
-4. Open `http://localhost:3000`.
+### Project Documentation
+For Software:
 
-The API key is read by `server.js` and is never sent to browser code. Do not commit `.env`; it is ignored by Git. Because the key was shared in chat, revoke it and create a replacement before using this outside local development.# off-script
-# off-script
+# Screenshots 
+
+![Screenshot2](Add screenshot 2 here with proper name)
+*Add caption explaining what this shows*
+
+![Screenshot3](Add screenshot 3 here with proper name)
+*Add caption explaining what this shows*
+
+# Diagrams
+![Workflow](Add your workflow/architecture diagram here)
+*Add caption explaining your workflow*
+
+For Hardware:
+
+# Schematic & Circuit
+![Circuit](Add your circuit diagram here)
+*Add caption explaining connections*
+
+![Schematic](Add your schematic diagram here)
+*Add caption explaining the schematic*
+
+# Build Photos
+![Components](Add photo of your components here)
+*List out all components shown*
+
+![Build](Add photos of build process here)
+*Explain the build steps*
+
+![Final](Add photo of final product here)
+*Explain the final build*
+
+### Project Demo
+# Video
+[Add your demo video link here]
+*Explain what the video demonstrates*
+
+# Additional Demos
+[Add any extra demo materials/links]
+
+## Team Contributions
+- [Name 1]: [Specific contributions]
+- [Name 2]: [Specific contributions]
+- [Name 3]: [Specific contributions]
+
+---
+Made with ❤️ at TinkerHub Useless Projects 
+
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
+![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
+
+

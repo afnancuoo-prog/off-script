@@ -54,12 +54,14 @@ For Software:
 
 # Screenshots 
 
+![Screenshot1](./Screenshot%202026-09-12%20082621.png)
+“The argument starts with two choices. AI decides the winner.”
+
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
-
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*

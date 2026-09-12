@@ -57,46 +57,23 @@ For Software:
 ![Screenshot1](./Screenshot%202026-09-12%20082621.png)
 “The argument starts with two choices. AI decides the winner.”
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](./Screenshot%202026-09-12%20082641.png)
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+*Quick Find Challenge page where users receive a random product, scan the QR code, and have three minutes to find and compare the product.*
+![Screenshot3](./Screenshot%202026-09-12%20082733.png)
 
-For Hardware:
+*Examples page showcasing different visual comparison challenges, including Banana, Coconut, and Tea Bubbles.*
+![Screenshot4](./Screenshot%202026-09-12%20082800.png)
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+*Coconut comparison page where users can upload two coconut images, select comparison criteria, and compare their visible features.*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+
+- **afnan km:** Designed and developed the frontend interface, implemented the image comparison pages, user interactions, responsive UI, and integrated the AI comparison features.
+- **fathima shahana v:** Worked on AI integration, backend functionality, testing, debugging, deployment, and documentation.
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
